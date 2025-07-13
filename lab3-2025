@@ -22,6 +22,6 @@ Linux Filesystem and File Management Lab
 
 8. In the logs directory, create two empty configuration files ‘nginx.conf’ and ‘mysql.cnf’.
 
-9. Copy the entire ‘settings’ directory, along with all its contents, into the ‘projects/devtools’ directory and rename it new_settings.
+9. Copy the entire ‘settings’ directory, along with all its contents, in your 'home' direstory and rename it new_settings.
 
 10. Copy 'service.txt' file from 'projects/settings' directory to 'projects/system' directory.
