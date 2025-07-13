@@ -9,7 +9,7 @@ Linux Filesystem and File Management Lab
 
 2. Inside the ‘devtools’ directory, create an empty file named ‘debug.log’.
 
-3. Inside the ‘project/devtools/logs’ directory, create a file named ‘status.txt’ containing the text:
+3. Inside the ‘projects/devtools/logs’ directory, create a file named ‘status.txt’ containing the text:
    "System setup is in progress. Please wait..."
 
 4. Copy the ‘/etc/fstab’ file into the ‘settings’ directory.
