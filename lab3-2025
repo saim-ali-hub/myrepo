@@ -18,7 +18,7 @@ Linux Filesystem and File Management Lab
 
 6. Use the tail command to get the last 3 lines of ‘/etc/services’ file and redirect the output into a new file named ‘services.txt’ while store inside ‘settings’ directory.
 
-7. Use the head command to get the first 6 lines of ‘/etc/shadow’ file and redirect this output to the ‘projects/system’ directory and name it to “shadow_report.txt”.
+7. Use the head command to get the first 3 lines of ‘/etc/resolv.conf’ file and redirect this output to the ‘projects/system’ directory and name it to “dns_report.txt”.
 
 8. In the logs directory, create two empty configuration files ‘nginx.conf’ and ‘mysql.cnf’.
 
