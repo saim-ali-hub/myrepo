@@ -3,23 +3,23 @@ Lab 2 – Navigation - 2025
 Linux Filesystem and File Management Lab
 =====================================================================================
 
-1)	Create the following nested directory structure in your home directory: ‘vars/systems/logs’.
-2)	Inside the ‘vars/systems’ directory, create an empty file named dmesg.
-3)	Create a file named ‘file1.txt’ inside the ‘vars/systems/logs’ directory. The file should contain the text:
-"I love Linux and am excited to join the DevOps course".
-4)	Now, create another nested directory structure in your home directory: ‘vars/os/configs’.
-5)	Copy the ‘/etc/hosts’ file into the ‘vars/os/configs’ directory.
-6)	Move the copied hosts file from ‘configs’ into the ‘vars’ directory located in your home directory.
-7)	Use the cat command to display the contents of the ‘hosts’ file now located in the ‘vars’ directory.
-8)	Again, use cat command to read the same hosts file, but this time redirect its output into a new file called ‘new_hosts’, and store it under the ‘vars/os/configs’ directory.
-9)	Copy the ‘file1.txt’ file from the ‘vars/systems/logs’ directory to the ‘vars/os’ directory and rename it to ‘new_file1.txt’ during the copy.
-10)	Inside the logs directory, create two empty files named ‘sshd_config’ and ‘httpd.conf’.
-11)	Delete the ‘new_hosts’ file located in the ‘vars/os/configs’ directory.
-12)	Attempt to delete the ‘vars/os/configs’ directory using the ‘rmdir command’. Were you successful? If not, why do you think it failed?
-13)	If the above deletion failed, remove the ‘vars/os/configs’ directory using an appropriate command that can handle non-empty directories.
-14)	 Use tail command to display the content of /etc/passwd. How many lines do see in command output?
-15)	Now gain use tail command to display the last 5 lines of /etc/passwd.
-16)	Use head to show the first 5 lines of /etc/group.
-17)	Use more to view a long file like /etc/services. How does navigation work?
-18)	Use less instead of more on the same file. What are the advantages of less?
-19)	Use the file command on /etc/passwd and /bin/ls. What does it tell you?
+1) Create the following nested directory structure in your home directory: ‘vars/systems/logs’.
+2) Inside the ‘vars/systems’ directory, create an empty file named dmesg.
+3) Create a file named ‘file1.txt’ inside the ‘vars/systems/logs’ directory. The file should contain the text:
+   "I love Linux and am excited to join the DevOps course".
+4) Now, create another nested directory structure in your home directory: ‘vars/os/configs’.
+5) Copy the ‘/etc/hosts’ file into the ‘vars/os/configs’ directory.
+6) Move the copied hosts file from ‘configs’ into the ‘vars’ directory located in your home directory.
+7) Use the cat command to display the contents of the ‘hosts’ file now located in the ‘vars’ directory.
+8) Again, use cat command to read the same hosts file, but this time redirect its output into a new file called ‘new_hosts’, and store it under the ‘vars/os/configs’ directory.
+9) Copy the ‘file1.txt’ file from the ‘vars/systems/logs’ directory to the ‘vars/os’ directory and rename it to ‘new_file1.txt’ during the copy.
+10) Inside the logs directory, create two empty files named ‘sshd_config’ and ‘httpd.conf’.
+11) Delete the ‘new_hosts’ file located in the ‘vars/os/configs’ directory.
+12) Attempt to delete the ‘vars/os/configs’ directory using the ‘rmdir command’. Were you successful? If not, why do you think it failed?
+13) If the above deletion failed, remove the ‘vars/os/configs’ directory using an appropriate command that can handle non-empty directories.
+14) Use tail command to display the content of /etc/passwd. How many lines do see in command output?
+15) Now gain use tail command to display the last 5 lines of /etc/passwd.
+16) Use head to show the first 5 lines of /etc/group.
+17) Use more to view a long file like /etc/services. How does navigation work?
+18) Use less instead of more on the same file. What are the advantages of less?
+19) Use the file command on /etc/passwd and /bin/ls. What does it tell you?
