@@ -3,26 +3,46 @@ Lab 1 – 2025
 Linux Basic Commands & Navigation
 ===================================================================
 Commands Covered: pwd, ls, ls -l, ls -al, cd, cd .., tree, mkdir, mkdir -p, rmdir, rm -r, cp, mv
+
 🔹 Section 1: Navigation and Directory Identification
+
 1. Use the appropriate command to display your present working directory.
+
 2. List all files and directories in your current location.
+
 3. Display detailed file information (permissions, size, ownership) in the current directory.
+
 4. List all files including hidden ones, with detailed information.
+
 5. Create a new directory named Linux, then navigate into it using the cd command.
+
 6. Use pwd to verify you're inside the “Linux” directory.
+
 7. While in the Linux directory, create three subdirectories: “Redhat”, “oel”, and “debian”.
+
 8. Use cd .. to go up one level, then check and confirm your present working directory using pwd.
+
 🔹 Section 2: Directory Creation, File Movement, Copying, and Deletion
+
 9. While in your home directory, create three empty files: “file1.txt”, “pic.jpg”, and “clip.avi”.
+
 10. Create three directories in your home directory: “documents”, “images”, and “media”. 
     a. Move “file1.txt” into the “documents” directory.
     b. Move “pic.jpg” into the “images” directory.
     c. Move “clip.avi” into the “media” directory.
+
 11. Create a nested directory structure office/hobby/personal using a single mkdir command with the appropriate option.
+
 12. Copy “file1.txt” from the “documents” directory into the “office” directory.
+
 13. Copy “pic.jpg” from the “images” directory into the “hobby” directory.
+
 14. Use the “tree” command to display the structure of the “office” directory.
+
 15. Use “rmdir” to remove the “personal” directory. Success!
+
 16. Try to remove the “hobby” directory using rmdir command. Observe and explain why it fails?
+
 17. Navigate one level up using cd .., and confirm your current location using pwd.
+
 18. Use the rm -r command to forcefully delete the “hobby” directory (including its contents).
