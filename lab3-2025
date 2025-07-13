@@ -1,0 +1,31 @@
+Lab 3 – Navigation - 2025
+=====================================================================================
+Linux Filesystem and File Management Lab
+=====================================================================================
+
+1. Create the following nested directory structure in your home directory:
+    •	projects/devtools/logs
+    •	projects/system/settings
+
+2. Inside the ‘devtools’ directory, create an empty file named ‘debug.log’.
+
+3. Inside the ‘project/devtools/logs’ directory, create a file named ‘status.txt’ containing the text:
+   "System setup is in progress. Please wait..."
+
+4. Copy the ‘/etc/fstab’ file into the ‘settings’ directory.
+
+5. Move the copied ‘fstab’ file from ‘settings’ directory to the ‘projects’ directory.
+
+6. Use the tail command to get the last 3 lines of ‘/etc/services’ file and redirect the output into a new file named  
+   ‘services.txt’ while store inside ‘settings’ directory.
+
+7. Use the head command to get the first 6 lines of ‘/etc/shadow’ file and redirect this output to the ‘projects/system’ 
+   directory and name it to “shadow_report.txt”.
+
+8. In the logs directory, create two empty configuration files ‘nginx.conf’ and ‘mysql.cnf’.
+
+9. Copy the entire ‘settings’ directory, along with all its contents, into the ‘devtools’ directory located under the projects 
+   directory in your home directory.
+
+10. While your PWD is your home directory Remove the ‘settings’ directory and all its contents using a command that works for non-
+    empty directories.
