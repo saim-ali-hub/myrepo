@@ -14,7 +14,7 @@ Linux Filesystem and File Management Lab
 
 5) Copy the ‘/etc/hosts’ file into the ‘vars/os/configs’ directory.
 
-6) Move the copied hosts file from ‘configs’ into the ‘vars’ directory located in your home directory.
+6) Copy the copied hosts file from ‘configs’ into the ‘vars’ directory located in your home directory.
 
 7) Use the cat command to display the contents of the ‘hosts’ file now located in the ‘vars’ directory.
 
@@ -24,20 +24,12 @@ Linux Filesystem and File Management Lab
 
 10) Inside the logs directory, create two empty files named ‘sshd_config’ and ‘httpd.conf’.
 
-11) Delete the ‘new_hosts’ file located in the ‘vars/os/configs’ directory.
+11) Create a new file named 'new_hosts' in the vars/os/configs directory with the content i.e. "I am enjoying DeveOps sessions and lab work".
 
 12) Attempt to delete the ‘vars/os/configs’ directory using the ‘rmdir command’. Were you successful? If not, why do you think it failed?
 
-13) If the above deletion failed, remove the ‘vars/os/configs’ directory using an appropriate command that can handle non-empty directories.
+13) Use the tail command to display the the last 5 lines of /etc/passwd file and append the output (without overwriting existing content) to a file named 'passwd_output.txt' located in the vars/systems directory. 
 
-14) Use tail command to display the content of /etc/passwd. How many lines do see in command output?
+14) Use head to show the first 5 lines of /etc/group overwriting existing content of a file named 'group_output.txt' located in the vars/systems directory..
 
-15) Now gain use tail command to display the last 5 lines of /etc/passwd.
-
-16) Use head to show the first 5 lines of /etc/group.
-
-17) Use more to view a long file like /etc/services. How does navigation work?
-
-18) Use less instead of more on the same file. What are the advantages of less?
-
-19) Use the file command on /etc/passwd and /bin/ls. What does it tell you?
+15) Use the file command on /etc/passwd and /bin/ls. What does it tell you store in a file 'output_file' in ‘vars/systems/logs’. 
