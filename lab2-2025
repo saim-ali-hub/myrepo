@@ -24,7 +24,7 @@ Linux Filesystem and File Management Lab
 
 10) Inside the logs directory, create two empty files named ‘sshd_config’ and ‘httpd.conf’.
 
-11) Create a new file named 'new_hosts' in the vars/os/configs directory with the content i.e. "I am enjoying DeveOps sessions and lab work".
+11) Create a new file named 'new_file.txt' in the ‘vars/systems’ directory with the content i.e. "I am enjoying DeveOps sessions and lab work". 
 
 12) Attempt to delete the ‘vars/os/configs’ directory using the ‘rmdir command’. Were you successful? If not, why do you think it failed?
 
