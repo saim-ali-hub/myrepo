@@ -24,4 +24,4 @@ Linux Filesystem and File Management Lab
 
 9. Copy the entire ‘settings’ directory, along with all its contents, in your 'home' direstory and rename it new_settings.
 
-10. Copy 'service.txt' file from 'projects/settings' directory to 'projects/system' directory.
+10. Copy 'services.txt' file from 'projects/settings' directory to 'projects/system' directory.
