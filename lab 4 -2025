@@ -29,7 +29,7 @@ VI/VIM Editor
       touch /var/log/myapp.log
 11. Go to the first line. Move your cursor to the end of line while staying in normal (escape mode). [Hint: Press (shift + 4) i.e.  $ ]
 12. Now move the cursor to the beginning of the line. Still in normal mode. [Hint: Press (shift + 6) i.e.  ^]
-13.	Now again move to the end of line while in insert mode. [Hint: Press (shift + a) i.e.  A]
+13. Now again move to the end of line while in insert mode. [Hint: Press (shift + a) i.e.  A]
     Here add a period (.) and the type “I love Linux”. 
-14.	Move the cursor back to the beginning of the line, in normal mode. (Don’t use shift button). [Hint: Press 0 (zero)] 
-15.	Save and quit. [Hint: Press Esc, then :wq and press Enter] 
+14. Move the cursor back to the beginning of the line, in normal mode. (Don’t use shift button). [Hint: Press 0 (zero)] 
+15. Save and quit. [Hint: Press Esc, then :wq and press Enter] 
