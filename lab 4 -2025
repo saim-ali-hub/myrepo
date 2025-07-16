@@ -2,33 +2,33 @@ Lab 4 – 2025
 ========================================================================================================
 VI/VIM Editor
 ========================================================================================================
-1.	Using vim and create a file called my_script.sh.
-2.	By default, you are in normal mode (also called escape mode). To start typing, press ‘I’ to switch in insert mode.
-3.	Without adding any text, exit the editor. [Hint: Press Esc then type :q and hit Enter]
-4.	Reopen the file my_script.sh. [Hint: vim my_script.sh]
-5.	Enter insert mode and type the following line:
-    # This is my first vim file and I am going to create a script.
-    Now delete the text and quit without saving 
-    [Hint: Press Esc then type shift :q! and hit Enter] 
-6.	Reopen the file again. 
-    Enter insert mode and type the following: 
-    # This is my first vim file and I am going to create a script. Vim has three modes: command mode, insert mode and visual mode.
-7.	Save and quit. [Hint: Press Esc then type :wq and hit Enter]
-8.	Reopen my_script.sh and try the following movements (no arrow keys allowed!):
-    a)	While you are at the first line, move to the last line. 
-    [Hint: Press Esc then type shift + g (i.e. G)]
-    b)	Move back to first line. (Hint: Press “gg”).
-    c)	If you are still in escape mode. go to last line again Pressing “shift + g” (i.e. G).
-    d)	While still in escape mode, press “o” 
-        What happens? You are moved to a new line below and enter insert mode automatically.
-    e)	Now type the following line:
-        “Wow I’m starting to like vim. It’s not difficult; it just need practice”  
-9.	Save and quit. [Hint: Press Esc, then :wq and press Enter]
-10.	Reopen the file and go to the last line. Add the following lines
+1. Using vim and create a file called my_script.sh.
+2. By default, you are in normal mode (also called escape mode). To start typing, press ‘I’ to switch in insert mode.
+3. Without adding any text, exit the editor. [Hint: Press Esc then type :q and hit Enter]
+4. Reopen the file my_script.sh. [Hint: vim my_script.sh]
+5. Enter insert mode and type the following line:
+   # This is my first vim file and I am going to create a script.
+   Now delete the text and quit without saving 
+   [Hint: Press Esc then type shift :q! and hit Enter] 
+6. Reopen the file again. 
+   Enter insert mode and type the following: 
+   # This is my first vim file and I am going to create a script. Vim has three modes: command mode, insert mode and visual mode.
+7. Save and quit. [Hint: Press Esc then type :wq and hit Enter]
+8. Reopen my_script.sh and try the following movements (no arrow keys allowed!):
+   a) While you are at the first line, move to the last line. 
+      [Hint: Press Esc then type shift + g (i.e. G)]
+   b) Move back to first line. (Hint: Press “gg”).
+   c) If you are still in escape mode. go to last line again Pressing “shift + g” (i.e. G).
+   d) While still in escape mode, press “o” 
+      What happens? You are moved to a new line below and enter insert mode automatically.
+   e) Now type the following line:
+      “Wow I’m starting to like vim. It’s not difficult; it just need practice”  
+9. Save and quit. [Hint: Press Esc, then :wq and press Enter]
+10. Reopen the file and go to the last line. Add the following lines
     # Next command will create a zero-byte file “myapp_logs” inside the /var/log dir.
       touch /var/log/myapp.log
-11.	Go to the first line. Move your cursor to the end of line while staying in normal (escape mode). [Hint: Press (shift + 4) i.e.  $ ]
-12.	Now move the cursor to the beginning of the line. Still in normal mode. [Hint: Press (shift + 6) i.e.  ^]
+11. Go to the first line. Move your cursor to the end of line while staying in normal (escape mode). [Hint: Press (shift + 4) i.e.  $ ]
+12. Now move the cursor to the beginning of the line. Still in normal mode. [Hint: Press (shift + 6) i.e.  ^]
 13.	Now again move to the end of line while in insert mode. [Hint: Press (shift + a) i.e.  A]
     Here add a period (.) and the type “I love Linux”. 
 14.	Move the cursor back to the beginning of the line, in normal mode. (Don’t use shift button). [Hint: Press 0 (zero)] 
