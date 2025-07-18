@@ -2,41 +2,39 @@ Review Lab1 - 2025
 ===========================================================
 Review Lab
 ===========================================================
-1.	Work in your home directory and create a directory proj-thurs
+1. Work in your home directory and create a directory proj-thurs
 
-2.	Go to that directory
+2. Go to that directory
 
-3.	Copy the file /etc/passwd in the ~/proj-thurs
+3. Copy the file /etc/passwd in the ~/proj-thurs
 
-4.	Copy the file /etc/group in the ~/proj-thurs with preserving the time stamp
+4. Copy the file /etc/group in the ~/proj-thurs with preserving the time stamp
 
-5.	Copy the /etc/hosts file in the ~/proj-thurs
+5. Copy the /etc/hosts file in the ~/proj-thurs
 
-6.	Send the first 15 lines of the file ~/proj-thurs/passwd to file ~/user-accounts
+6. Send the first 15 lines of the file ~/proj-thurs/passwd to file ~/user-accounts
 
-7.	Append the last 50 lines of the file ~/proj-thurs/group to file ~/user-accounts
+7. Append the last 50 lines of the file ~/proj-thurs/group to file ~/user-accounts
 
-8.	Let’s vi the ~/user-accounts file
+8. Let’s vi the ~/user-accounts file
 
-9.	Now let's rename the file user-accounts to db-users
+9. Now let's rename the file user-accounts to db-users
 
 10.	Now let’s copy this file to /tmp/users/dbusers changing name to dbuser-username
 
-11.	Go to your home directory
+11. Go to your home directory
 
-12.	Execute command pwd, you should be in ~ 
+12. Execute command pwd, you should be in ~ 
 
-13.	cat passwd group hosts >> single-file
+13. Cat 'passwd' created in task 6 group hosts >> ~/single-file
 
-14.	Now remove group passwd hosts from ~/proj-thurs/passwd directory
+14. Now remove 'group' 'passwd' 'hosts' from '~/proj-thurs' directory.
 
-15.	Show that single-file exists.
+15. Show that ~/single-file exist. Redirect the output in a file in your home directory named validation_file. 
 
-16.	What's the size of the file?
+16. What are the permissions on the '~/single-file' file and redirect the output in ~/validation_file.
 
-17.	What are the permissions on the file?
+17. Let’s read the file with more and less and redirect the output in a file called validation_file which is in your home directory.
 
-18.	Let’s read the file with more and less.
-
-19.	Let’s read the file with head and tail.
+18. Let’s read the file with head and tail and redirect the output in a file in your ~/validation_file.
 
