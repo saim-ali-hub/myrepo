@@ -5,7 +5,7 @@ Practice test 1 – 2025
  
 3. Use the ‘uname –a’ command and redirect its output to ‘~/workspace/dev/env/hostname.txt’.
 
-4. Append the total number of lines in ‘/etc/passwd’ to the file ‘~/workspace/dev /user_count.log’.
+4. Append the total number of lines in ‘/etc/passwd’ to the file ‘~/workspace/dev/user_count.log’.
 
 5. In ‘~/resources/config/’ directory create a script named ‘hello.sh’ with following contents.
    Hello, this is Linux Test1
