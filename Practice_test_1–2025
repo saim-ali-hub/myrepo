@@ -1,0 +1,28 @@
+Practice test 1 – 2025
+1. Make sure you are in your home directory create the directory ‘~/resources/config/’ and copy the file ‘/etc/hosts’ into it.
+
+2. Create directory structure ‘~/workspace/dev/env/’
+ 
+3. Use the ‘uname –a’ command and redirect its output to ‘~/workspace/dev/env/hostname.txt’.
+
+4. Append the total number of lines in ‘/etc/passwd’ to the file ‘~/workspace/dev /user_count.log’.
+
+5. In ‘~/resources/config/’ directory create a script named ‘hello.sh’ with following contents.
+   Hello, this is Linux Test1
+
+6. Create a hidden file named ‘.secretinfo’ in the ‘~/workspace/dev/env’ directory and insert the output of the ‘whoami’ command into it.
+
+7. Append the last 4 lines of ‘/etc/group’ to ‘~/workspace/dev/users_tail.txt’.
+
+8. Make sure you're in ‘~/workspace/dev’, then run ls -l env and save the output to ~/workspace/list_env.txt.
+
+9. Inside ~/resources, create an empty file named logfile.log.
+
+10. Use cat command to read ‘/etc/os-release’ command and redirect the output to ‘~/workspace/dev/env/os_version’
+
+11. Use the head command to get the first 2 lines of ‘/etc/services’ and save the output to ‘~/resources/dns_info.txt’.
+
+12. Copy the file dns_info.txt in the ‘~/resources/’ directory and rename it to ‘dns_copy.txt’ store in ‘~/workspace/dev’ directory.
+
+Note: If you are done please execute following command:
+bash /usr/practice.sh
