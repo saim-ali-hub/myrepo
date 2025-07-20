@@ -1,0 +1,53 @@
+Lab5 – 2025
+=====================================================================================
+PERMISSIONS
+=====================================================================================
+Note: Please check your present working directory (PWD) — it should be your home directory, and you should remain there throughout the exercise.
+
+1. Create a directory named my_own_dir and check its permissions using the command: ls -ld my_own_dir
+
+2. Change the permissions of the “my_own_dir” directory so that the user can only read and write, while the group and others can read only. Make sure you're using symbolic notation. Then, verify the permissions.
+
+3. Execute the command:
+   ls my_own_dir
+   Looks like the command ran successfully. Aha! No errors — well done!
+
+4. Try to change into the “my_own_dir” directory. What happened? Did it fail? It should.
+
+5. Now try to create a directory named “Redhat” inside “my_own_dir” while you are still in your home directory. What happened? Did it fail? It should have.
+
+6. Modify the permissions on the “my_own_dir” directory to ensure the user can read, write, and execute; the group can read and write; and others can read only. Now, try creating two directories named “Redhat” and “OEL” inside “my_own_dir”. What happened? This time, it should succeed.
+
+7. After creating the directories above, change the permissions on “my_own_dir” and all “Redhat” directories inside it (in a single command) so that the user can read, write, and execute; the group can read and write; and others can read only. (Use numeric notation.)
+
+8. Change into the “my_own_dir” directory and create a file named “file_1.txt” and a directory named dir_1 inside it.
+
+9. Remove read permission from the user, group, and others for the file named “file_1.txt”.
+
+10. Now try to read the file using the cat command. Did it fail? No worries — that was expected.
+
+11. Reassign read permissions to all, and run the cat command again. Were you able to read it? Wow, great!
+
+12. Remove write permission from the user and group for the file “file_1.txt”.
+
+13. Try running this command:
+    echo "File permission setting is a fun" > file_1.txt
+    It should fail. Did it?
+
+14. Now reassign write permissions to the user and group for the file file_1.txt.
+
+15. Try the same command again:
+    echo "File permission setting is a fun" > file_1.txt
+    It should succeed this time. Did it?
+
+16. Give execute permission to the owner of “file_1.txt”. (Please use symbolic notation.)
+
+17. Set permissions on the “dir_1” directory using the command line. For example, remove read permission for the owner and execute permission for the group and others.
+
+18. Check the permissions on “dir_1”, redirect the output to a file named “new_info”, and store it under the “~/my_own_dir/Redhat” directory.
+
+19. While inside “my_own_dir”, copy the “new_info” file into the “OEL” directory.
+
+20. Using numeric notation, give full permissions to everyone on the “dir_1” directory.
+
+21. While still in “my_own_dir”, copy the “new_info” file from the OEL directory and rename it to “new_info.txt”. Keep the new file in the “OEL” directory.
