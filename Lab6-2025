@@ -1,0 +1,38 @@
+Lab6 – 2025
+======================================================================================================
+Ownership and Group Management Lab
+======================================================================================================
+Important Note:
+Please read carefully before using chown with sudo:
+Your current working directory (PWD) must be your home directory.
+As a regular user, you do not have permission to change file ownership on your own.
+However, we've granted you limited sudo access to use chown, but only within your own home directory.
+Usage Syntax:
+sudo chown <new-owner> /home/<your-username>/<file-or-directory>
+   
+1. Create a file named “my_file.txt”. Check the owner and group of the file — both should be your username.
+
+2. Change only the user ownership of “my_file.txt” from your username to “new-user”. Verify the change.
+
+3. Now change the group of “my_file.txt” from your username to “students”. (Note: Use only the chown command for this step.)
+
+4. Confirm that the group of “my_file.txt” has been successfully changed.
+
+5. Create a new file named “new_file.txt”. Ensure that your username is set as both the owner and the group of this file.
+
+6. Change both the owner and group of “new_file.txt” simultaneously: the owner should be “new-user” and the group should be “students”. Make sure this change is successful.
+
+7. Create a file named “my_fun.txt” containing the text: "Changing ownership is really fun". Make sure your username is set as both the owner and group.
+
+8. Change the group of “my_fun.txt” to “students”. (Note: Do not use the chown command for this step.)
+
+9. Create two files named “test_file1” and “test_file2” in your home directory.
+
+10. Change the ownership of both files (“test_file1” and “test_file2”) so that “new-user” is the owner and “admins” is the group. (Complete this task using a single command.)
+
+11. Create a directory named “test_dir1” and use a long listing to verify that you are the owner and group of the directory.
+
+12. Change both the owner and group of “test_dir1”: set the owner to “test-user” and the group to “admins”. (Ensure that both changes are done simultaneously.)
+
+13. Create a directory named “my_new_dir”, and inside it create files “new_file1”, “new_file2”, and directories “new_dir1” and “new_dir2”. Then, change the owner and group of “my_new_dir”, along with all its contents, recursively in a single command.
+
