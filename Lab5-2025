@@ -18,7 +18,7 @@ Note: Please check your present working directory (PWD) — it should be your ho
 
 6. Modify the permissions on the “my_own_dir” directory to ensure the user can read, write, and execute; the group can read and write; and others can read only. Now, try creating two directories named “Redhat” and “OEL” inside “my_own_dir”. What happened? This time, it should succeed.
 
-7. After creating the directories above, change the permissions on “my_own_dir” and all “Redhat” directories inside it (in a single command) so that the user can read, write, and execute; the group can read and write; and others can read only. (Use numeric notation.)
+7. After creating the directories above, change the permissions on “my_own_dir” and all files and directories inside it (in a single command) so that the user can read, write, and execute; the group can read and write; and others can read only. (Use numeric notation.)
 
 8. Change into the “my_own_dir” directory and create a file named “file_1.txt” and a directory named dir_1 inside it.
 
