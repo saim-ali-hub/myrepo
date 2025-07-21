@@ -16,7 +16,7 @@ Note: Please check your present working directory (PWD) — it should be your ho
 
 5. Now try to create a directory named “Redhat” inside “my_own_dir” while you are still in your home directory. What happened? Did it fail? It should have.
 
-6. Modify the permissions on the “my_own_dir” directory to ensure the user can read, write, and execute; the group can read and write; and others can read only. Now, try creating two directories named “Redhat” and “OEL” inside “my_own_dir”. What happened? This time, it should succeed.
+6. Modify the permissions on the “my_own_dir” directory to ensure the user can read, write, and execute; the group can read, write, execute; and others can read and execute. Now, try creating two directories named “Redhat” and “OEL” inside “my_own_dir”. What happened? This time, it should succeed. 
 
 7. After creating the directories above, change the permissions on “my_own_dir” and all files and directories inside it (in a single command) so that the user can read, write, and execute; the group can read and write; and others can read only. (Use numeric notation.)
 
