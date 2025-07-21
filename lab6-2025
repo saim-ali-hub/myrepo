@@ -9,7 +9,8 @@ As a regular user, you do not have permission to change file ownership on your o
 However, we've granted you limited sudo access to use chown, but only within your own home directory.
 Usage Syntax:
 sudo chown <new-owner> /home/<your-username>/<file-or-directory>
-   
+Note: using absolute path is mandatory, otherwise it will fail.
+
 1. Create a file named “my_file.txt”. Check the owner and group of the file — both should be your username.
 
 2. Change only the user ownership of “my_file.txt” from your username to “new-user”. Verify the change.
