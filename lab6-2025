@@ -35,5 +35,5 @@ Note: using absolute path is mandatory, otherwise it will fail.
 
 12. Change both the owner and group of “test_dir1”: set the owner to “test-user” and the group to “admins”. (Ensure that both changes are done simultaneously.)
 
-13. Create a directory named “my_new_dir”, and inside it create files “new_file1”, “new_file2”, and directories “new_dir1” and “new_dir2”. Then, change the owner and group of “my_new_dir”, along with all its contents, recursively in a single command.
+13. 13.	Create a directory named “my_new_dir”, and inside it create files “new_file1”, “new_file2”, and directories “new_dir1” and “new_dir2”. Then, change the owner to “test-user” and group to “admins” for “my_new_dir” directory, along with all its contents, recursively in a single command.
 
