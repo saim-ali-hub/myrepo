@@ -18,7 +18,7 @@ Note: using absolute path is mandatory
 
 4. Create a directory named “linux_practice” in your home directory. Then check its permissions using the “ls -ld linux_practice” command.
 
-5. Change the permissions of the “linux_practice” directory so that the user has write and execute permissions only, and the group can write and others have read-only access. Use symbolic notation to do this. 
+5. Change the permissions of the “linux_practice” directory so that the user and group has write and execute permissions, and others have read-only access. Use symbolic notation to do this. 
 
 6. Try listing the contents of “linux_practice” using the “ls linux_practice” command. Then try to change into the directory using “cd linux_practice”. You should get a permission denied message.
 
