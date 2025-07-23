@@ -34,16 +34,16 @@ Note: using absolute path is mandatory
 
 11. Give execute permission to the owner of “notes.txt” using symbolic notation.
 
-14. Create a file named “report.txt” in your home directory. Check its owner and group, and confirm that both are your current username.
+12. Create a file named “report.txt” in your home directory. Check its owner and group, and confirm that both are your current username.
 
-15. Change the owner of “report.txt” to “new-user”. Then, using the chown command, change the group to “students”. Verify that both the owner and group have been updated correctly.
+13. Change the owner of “report.txt” to “new-user”. Then, using the chown command, change the group to “students”. Verify that both the owner and group have been updated correctly.
 
-16. Create another file named “config.txt”. Change both the owner and group to “new-user” and “students” in a single command. Make sure the change is successful.
+14. Create another file named “config.txt”. Change both the owner and group to “new-user” and “students” in a single command. Make sure the change is successful.
 
-17. Create a file named “fun.txt” with the content: 
+15. Create a file named “fun.txt” with the content: 
     Ownership changes are cool!. 
     Change only the group of “fun.txt” to “students” using the chgrp command. (Do not use chown for this step).
 
-18. Create two files named “sample1” and “sample2” in your home directory. Change the owner of both files to “new-user” and the group to “admins” using a single command. Confirm the changes.
+16. Create two files named “sample1” and “sample2” in your home directory. Change the owner of both files to “new-user” and the group to “admins” using a single command. Confirm the changes.
 
-19. Create a directory named “project_dir”. Inside it, create two files: “log1.txt” and “log2.txt”, and two directories: “cfg1” and “cfg2”. Then recursively change the owner to “test-user” and the group to “admins” for “project_dir” and everything inside it. Make sure all ownerships have been updated.
+17. Create a directory named “project_dir”. Inside it, create two files: “log1.txt” and “log2.txt”, and two directories: “cfg1” and “cfg2”. Then recursively change the owner to “test-user” and the group to “admins” for “project_dir” and everything inside it. Make sure all ownerships have been updated.
