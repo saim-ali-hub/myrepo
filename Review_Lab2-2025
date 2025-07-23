@@ -1,0 +1,45 @@
+Review_Lab2 - 2025
+===========================================================
+Review Navigation, Permissions, Ownership
+===========================================================
+
+1. Create the following nested directory structure in your home directory:
+   • workspace/tools/configs
+   • workspace/server/logs
+
+2. Inside the “tools” directory, create an empty file named “tracker.log”.
+
+3. Inside the “workspace/tools/configs” directory, create a file named “build.txt” containing the text:
+   "Build process initialized. Stand by..."
+
+4. Create a directory named “linux_practice” in your home directory. Then check its permissions using the “ls -ld linux_practice” command.
+
+5. Change the permissions of the “linux_practice” directory so that the user has write and execute permissions only, and the group can write and others have read-only access. Use symbolic notation to do this. 
+
+6. Try listing the contents of “linux_practice” using the “ls linux_practice” command. Then try to change into the directory using “cd linux_practice”. You should get a permission denied message.
+
+7. Now modify chmod the permissions so that the user and group have read, write, and execute permissions, while others have read and execute access. After that, create two directories named “Fedora” and “Ubuntu” inside “linux_practice”. This time, it should work successfully.
+
+8. While inside the “linux_practice” directory, create a file named “notes.txt” with the content: 
+   “Linux permissions test”. 
+   Also, create a subdirectory named “scripts”.
+
+9. Remove read permission for the user, group, and others from the file “notes.txt”. Then try reading the file using the cat command. It should fail. Next, give read permission back to everyone and try reading the file again. This time, it should succeed.
+
+10. Remove write permission from the user and group for the file “notes.txt”. Now try appending a line to it using the echo command “I am enjoying permissions session”. It should fail. Reassign write permissions to the user and group, and try appending the text again. This time, it should work.
+
+11. Give execute permission to the owner of “notes.txt” using symbolic notation.
+
+14. Create a file named “report.txt” in your home directory. Check its owner and group, and confirm that both are your current username.
+
+15. Change the owner of “report.txt” to “new-user”. Then, using the chown command, change the group to “students”. Verify that both the owner and group have been updated correctly.
+
+16. Create another file named “config.txt”. Change both the owner and group to “new-user” and “students” in a single command. Make sure the change is successful.
+
+17. Create a file named “fun.txt” with the content: 
+    Ownership changes are cool!. 
+    Change only the group of “fun.txt” to “students” using the chgrp command. (Do not use chown for this step).
+
+18. Create two files named “sample1” and “sample2” in your home directory. Change the owner of both files to “new-user” and the group to “admins” using a single command. Confirm the changes.
+
+19. Create a directory named “project_dir”. Inside it, create two files: “log1.txt” and “log2.txt”, and two directories: “cfg1” and “cfg2”. Then recursively change the owner to “test-user” and the group to “admins” for “project_dir” and everything inside it. Make sure all ownerships have been updated.
