@@ -2,6 +2,10 @@ Review_Lab2 - 2025
 ===========================================================
 Review Navigation, Permissions, Ownership
 ===========================================================
+As you already aware of we granted you limited sudo access to use chown, but only within your own home directory.
+Usage Syntax:
+sudo chown <new-owner> /home/<your-username>/<file-or-directory>Syntax:
+Note: using absolute path is mandatory 
 
 1. Create the following nested directory structure in your home directory:
    • workspace/tools/configs
