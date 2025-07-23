@@ -41,7 +41,7 @@ Note: using absolute path is mandatory
 14. Create another file named “config.txt”. Change both the owner and group to “new-user” and “students” in a single command. Make sure the change is successful.
 
 15. Create a file named “fun.txt” with the content: 
-    Ownership changes are cool!. 
+    Ownership changes are cool! 
     Change only the group of “fun.txt” to “students” using the chgrp command. (Do not use chown for this step).
 
 16. Create two files named “sample1” and “sample2” in your home directory. Change the owner of both files to “new-user” and the group to “admins” using a single command. Confirm the changes.
