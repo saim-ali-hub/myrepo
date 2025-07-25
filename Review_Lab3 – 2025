@@ -3,47 +3,47 @@ Review_Lab3 – 2025
 System Exploration and File Management
 ============================================================================================
 
-==>	System Exploration and Basic Info (Tasks 1–5)
+==> System Exploration and Basic Info (Tasks 1–5)
 
 The first 10 tasks are just for your revision of command don’t worry just execute command store information in a file “my_server_info”. 
 
-1.	isplay the hostname of your system using both “hostname” and “hostnamectl”.
+1. display the hostname of your system using both “hostname” and “hostnamectl”.
 
-2.	Show the system architecture and kernel version using “uname”.
+2. Show the system architecture and kernel version using “uname”.
 
-3.	Display how long the system has been running using “uptime”.
+3. Display how long the system has been running using “uptime”.
 
-4.	Show CPU information using “lscpu”.
+4. Show CPU information using “lscpu”.
 
-5.	List the block devices connected to the system using “lsblk”.
+5. List the block devices connected to the system using “lsblk”.
 
-==>	Hands on: System Identification and Basic Info (Tasks 1–16)
+==> Hands on: System Identification and Basic Info (Tasks 1–16)
 
-1.	Create a file named alpha.log with no content in “~/lab2025”.
+1. Create a file named alpha.log with no content in “~/lab2025”.
 
-2.	Create a directory structure “~/lab2025/Linux/DevOps” using a single command.
+2. Create a directory structure “~/lab2025/Linux/DevOps” using a single command.
 
-3.	Inside “~/lab2025/Linux/DevOps”, create 3 files named “one.txt”, “two.txt”, “three.txt” using a single touch command.
+3. Inside “~/lab2025/Linux/DevOps”, create 3 files named “one.txt”, “two.txt”, “three.txt” using a single touch command.
 
-4.	Create an empty directory named “old_stuff” inside “~/lab2025/Linux” directory and copy all .txt files from “~/lab2025/Linux/DevOps” to “old_stuff” and name is “summary.txt”.
+4. Create an empty directory named “old_stuff” inside “~/lab2025/Linux” directory and copy all .txt files from “~/lab2025/Linux/DevOps” to “old_stuff” and name is “summary.txt”.
 
-5.	Copy “three.txt” files from “oldstuff” back to “~/lab2025/Linux/DevOps” and rename it “final_three.txt”.
+5. Copy “three.txt” files from “oldstuff” back to “~/lab2025/Linux/DevOps” and rename it “final_three.txt”.
 
-6.	Append the long list output of “~/lab2025/Linux/DevOps” into a file named “dirlist.txt” and store in “~/lab2025/Linux”.
+6. Append the long list output of “~/lab2025/Linux/DevOps” into a file named “dirlist.txt” and store in “~/lab2025/Linux”.
 
-7.	Create a file using echo named “data.csv” with the following comma-separated content:
-    id,name,score  on the first line, and 
-    1,Alice,85    2,Bob,90   3,Carol,70 on the next three lines.
+7. Create a file using echo named “data.csv” with the following comma-separated content:
+   id,name,score  on the first line, and 
+   1,Alice,85    2,Bob,90   3,Carol,70 on the next three lines.
 
-8.	Use cat to concatenate “summary.txt” and “dirlist.txt” into a new file called ~/lab2025/Linux/merged.log.
+8. Use cat to concatenate “summary.txt” and “dirlist.txt” into a new file called ~/lab2025/Linux/merged.log.
 
-9.	Use grep to find scores of Carol and Bob in “data.csv” and append in “~/lab2025/Linux/merged.log”.
+9. Use grep to find scores of Carol and Bob in “data.csv” and append in “~/lab2025/Linux/merged.log”.
 
-10.	Use grep to find all lines in “data.csv” containing scores above “80” and append in “~/lab2025/Linux/merged.log”.
+10. Use grep to find all lines in “data.csv” containing scores above “80” and append in “~/lab2025/Linux/merged.log”.
 
-11.	Change directory to “~/lab2025/Linux/DevOps”, create a file “secret.txt” and change its permissions so only the owner and group can read, write and others have no access.
+11. Change directory to “~/lab2025/Linux/DevOps”, create a file “secret.txt” and change its permissions so only the owner and group can read, write and others have no access.
 
-12.	Check your PWD make sure you in DevOps directory create a directory “private_dir” and set permissions so only the owner can access it.
+12. Check your PWD make sure you in DevOps directory create a directory “private_dir” and set permissions so only the owner can access it.
 
 13. Change the permissions of “summary.txt” to 640 and verify using ls -l.
 
@@ -52,6 +52,6 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 15. Change ownership of “final_three.txt” to another “new-user” and group “admins” on your system using chown.
 
 16. Edit “data.csv” in vim and:
-    •	Add a new entry: 4,David,95
-    •	Copy first 2 lines and paste at the end.
-    •	Save and exit.
+    • Add a new entry: 4,David,95
+    • Copy first 2 lines and paste at the end.
+    • Save and exit.
