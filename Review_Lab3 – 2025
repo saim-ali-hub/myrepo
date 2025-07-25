@@ -25,11 +25,11 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 
 3. Inside the ~/lab2025/Linux/DevOps directory, create three text files with the following content:
 
-   one.txt – containing the text "This is my first .txt file"
+   "one.txt" – containing the text "This is my first .txt file"
 
-   two.txt – containing the text "This is my 2nd .txt file"
+   "two.txt" – containing the text "This is my second .txt file"
 
-   three.txt – containing the text "This is my 3rd .txt file"
+   "three.txt" – containing the text "This is my third .txt file"
 
 4. Create an empty directory named “old_stuff” inside “~/lab2025/Linux” directory and copy all .txt files from “~/lab2025/Linux/DevOps” to “old_stuff” and name is “summary.txt”. 
    (Note: This will result in only one file, summary.txt, containing the last copied file's content — others will be overwritten unless handled differently.)
@@ -40,7 +40,7 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 
 7. Create a file using echo named “data.csv” with the following comma-separated content:
    id,name,score  on the first line, and 
-   1,Alice,85    2,Bob,90   3,Carol,70 on the next three lines.
+   1,Alice,85    2,Bob,90   3,Carol,70 on the next three consecutive lines.
 
 8. Use cat to concatenate “summary.txt” and “dirlist.txt” into a new file called ~/lab2025/Linux/merged.log.
 
