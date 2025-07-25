@@ -25,9 +25,10 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 
 3. Inside “~/lab2025/Linux/DevOps”, create 3 files named “one.txt”, “two.txt”, “three.txt” using a single touch command.
 
-4. Create an empty directory named “old_stuff” inside “~/lab2025/Linux” directory and copy all .txt files from “~/lab2025/Linux/DevOps” to “old_stuff” and name is “summary.txt”.
+4. Create an empty directory named “old_stuff” inside “~/lab2025/Linux” directory and copy all .txt files from “~/lab2025/Linux/DevOps” to “old_stuff” and name is “summary.txt”. 
+   (Note: This will result in only one file, summary.txt, containing the last copied file's content — others will be overwritten unless handled differently.)
 
-5. Copy “three.txt” files from “oldstuff” back to “~/lab2025/Linux/DevOps” and rename it “final_three.txt”.
+5. Copy  summary.txt file from “oldstuff” back to “~/lab2025/Linux/DevOps” and rename it “final_three.txt”.
 
 6. Append the long list output of “~/lab2025/Linux/DevOps” into a file named “dirlist.txt” and store in “~/lab2025/Linux”.
 
