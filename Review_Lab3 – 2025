@@ -38,7 +38,7 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 
 6. Append the long list output of “~/lab2025/Linux/DevOps” into a file named “dirlist.txt” and store in “~/lab2025/Linux”.
 
-7. Create a file using echo named “data.csv” with the following comma-separated content:
+7. Create a file using echo named “~/lab2025/Linux/data.csv” with the following comma-separated content:
    id,name,score  on the first line, and 
    1,Alice,85    2,Bob,90   3,Carol,70 on the next three consecutive lines.
 
