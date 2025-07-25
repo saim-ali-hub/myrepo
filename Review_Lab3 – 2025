@@ -3,7 +3,7 @@ Review_Lab3 – 2025
 System Exploration and File Management
 ============================================================================================
 
-==>	System Exploration and Basic Info (Tasks 1–10)
+==>	System Exploration and Basic Info (Tasks 1–5)
 
 The first 10 tasks are just for your revision of command don’t worry just execute command store information in a file “my_server_info”. 
 
@@ -17,7 +17,7 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 
 5.	List the block devices connected to the system using “lsblk”.
 
-==>	Hands on: System Identification and Basic Info (Tasks 1–10)
+==>	Hands on: System Identification and Basic Info (Tasks 1–16)
 
 1.	Create a file named alpha.log with no content in “~/lab2025”.
 
