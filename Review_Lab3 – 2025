@@ -58,7 +58,7 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 
 15. Change ownership of “final_three.txt” to another “new-user” and group “admins” on your system using chown.
 
-16. Edit “data.csv” in vim and:
+16. Edit “~/lab2025/Linux/data.csv” in vim and:
     • Add a new entry: 4,David,95
     • Copy first 2 lines and paste at the end.
     • Save and exit.
