@@ -23,7 +23,13 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 
 2. Create a directory structure “~/lab2025/Linux/DevOps” using a single command.
 
-3. Inside “~/lab2025/Linux/DevOps”, create 3 files named “one.txt”, “two.txt”, “three.txt” using a single touch command.
+3. Inside the ~/lab2025/Linux/DevOps directory, create three text files with the following content:
+
+   one.txt – containing the text "This is my first .txt file"
+
+   two.txt – containing the text "This is my 2nd .txt file"
+
+   three.txt – containing the text "This is my 3rd .txt file"
 
 4. Create an empty directory named “old_stuff” inside “~/lab2025/Linux” directory and copy all .txt files from “~/lab2025/Linux/DevOps” to “old_stuff” and name is “summary.txt”. 
    (Note: This will result in only one file, summary.txt, containing the last copied file's content — others will be overwritten unless handled differently.)
