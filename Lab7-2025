@@ -1,0 +1,35 @@
+Lab7-2025
+=====================================================================================
+Using Find Command
+=====================================================================================
+
+Using find command find the data and store in a file named ~/output_find if not explicitly mentioned in task. (Hint: you can do that using following at the end of your command) 
+>> ~/output_find 
+
+1. Find all files owned by your current user across the system.
+
+2. Find all hidden files inside your home directory.
+
+3. Find all files modified in the last 2 days in your /var directory.
+
+4. Find all files accessed more than 10 days ago under /var.
+
+5. Find all files larger than 1 MB within /etc.
+
+6. Find all files smaller than 1 MB within /etc.
+
+7. Find all empty files owned by your user under /home.
+
+8. Find all files in your server having name extension .sh and long list them.
+
+9. Find files with exact permission 644 starting from /home.
+
+10. Find all directories with permission 755 under /home.
+
+11. Find a file named messages, owned by user root from /var directory.
+
+12. Find all .log files under /var/log and list them with size using ls -lh and store in file ~/log_files 
+
+13. Find all .conf files under /etc and copy them to ~/backup_conf.
+
+14. Find all files owned by your user in /tmp and delete them.
