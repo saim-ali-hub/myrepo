@@ -31,7 +31,7 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 
    "three.txt" – containing the text "This is my third .txt file"
 
-4. Create an empty directory named “old_stuff” inside “~/lab2025/Linux” directory and copy all .txt files from “~/lab2025/Linux/DevOps” to “old_stuff” and name is “summary.txt”. 
+4. Create an empty directory named “old_stuff” inside “~/lab2025/Linux” directory and read all .txt files contents from “~/lab2025/Linux/DevOps” and appened in a file “summary.txt” which under “old_stuff”. 
    (Note: This will result in only one file, summary.txt, containing the last copied file's content — others will be overwritten unless handled differently.)
 
 5. Copy  summary.txt file from “oldstuff” back to “~/lab2025/Linux/DevOps” and rename it “final_three.txt”.
