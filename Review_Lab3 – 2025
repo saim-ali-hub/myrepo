@@ -46,7 +46,7 @@ The first 10 tasks are just for your revision of command don’t worry just exec
 
 9. Use grep to find scores of Carol and Bob in “data.csv” and append in “~/lab2025/Linux/merged.log”.
 
-10. Use grep to find all lines in “~/lab2025/Linux/data.csv” containing scores above “80” and append in “~/lab2025/Linux/merged.log”.
+10. Use grep to find score of Alice and Bob in “~/lab2025/Linux/data.csv” and append in “~/lab2025/Linux/merged.log”.
 
 11. Change directory to “~/lab2025/Linux/DevOps”, create a file “secret.txt” and change its permissions so only the owner and group can read, write and others have no access.
 
