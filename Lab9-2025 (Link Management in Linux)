@@ -1,0 +1,73 @@
+
+Lab 9 - 2025
+=====================================================================================
+Link Management in Linux 
+=====================================================================================
+
+==>	Symbolic (Soft) Link:
+1. Add the text “I Love Linux Operating System” to a file named my_file.txt and save it in your home directory.
+
+2. Create a symbolic (soft) link named my_link.txt that points to the file my_file.txt.
+
+3. Verify that the symbolic link was successfully created by using the ls -l command.
+
+4. Read the contents of my_link.txt and confirm it matches the target file.
+
+5. Check the inode numbers of both my_link.txt and my_file.txt. What do you observe?
+
+6. Create a directory named my_dir inside your home directory, and move my_file.txt into my_dir.
+
+7. Verify the status of the symbolic link using the ls -l command.
+   What happened? Oh no - the link is broken!
+
+8. Move my_file.txt back from my_dir to your home directory.
+
+9. Check the status of the symbolic link again using ls -l.
+   Looks like the link is working again — success!
+
+10. Attempt to change permissions on my_link.txt so that the user has read and write access, while the group and others have only read access.
+
+11. Check the permissions of both my_link.txt and my_file.txt.
+    Were the permissions updated on both files?
+
+12. Remove the symbolic link using the unlink command.
+    What happened to my_file.txt? Is it still intact?
+
+13. Create a directory named my_new_dir in your home directory and then create two files inside it: file1.txt and file2.txt.
+
+14. Create a symbolic link named my_new_link that points to the my_new_dir directory.
+
+15. Verify that the symbolic link was created successfully using the ls -l command.
+    If it worked, check the contents of both the link and the original directory.
+
+16. Remove the symbolic link using the rm command.
+    What happened to my_new_dir? Is it still intact?
+
+==>	Hard Link
+
+1. In your home directory, create a file named source_file.txt with the text “Welcome to Linoop”.
+
+2. Create a hard link named hard_link.txt pointing to source_file.txt.
+
+3. Verify that the hard link was created successfully using the ls -l command.
+
+4. Read the contents of hard_link.txt.
+   Do they match source_file.txt?
+
+5. Check the inode numbers of both hard_link.txt and source_file.txt.
+   Are they the same?
+
+6. Create a directory named hard_link_dir in your home directory and move source_file.txt into that directory.
+
+7. Check the status of hard_link.txt using the ls -l command.
+   Is the hard link broken or still functioning?
+
+8. Change the permissions of hard_link_dir so that the user has read and write access, and the group and others have only read access.
+
+9. Check the permissions of both hard_link.txt and source_file.txt.
+   Were permissions updated on both?
+
+10. Delete the source_file.txt file.
+    Now try viewing the contents of hard_link.txt. Is it still intact?
+
+11. Attempt to create a hard link named new_hard_link that points to the directory my_new_dir. Were you successful? Why or why not?
