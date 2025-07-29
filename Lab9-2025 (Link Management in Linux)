@@ -33,15 +33,15 @@ Link Management in Linux
 12. Remove the symbolic link using the unlink command.
     What happened to my_file.txt? Is it still intact?
 
-13. Create a directory named my_new_dir in your home directory and then create two files inside it: file1.txt and file2.txt.
+13. Create a directory named new_dir in your home directory and then create two files inside it: file1.txt and file2.txt.
 
-14. Create a symbolic link named my_new_link that points to the my_new_dir directory.
+14. Create a symbolic link named new_link that points to the new_dir directory.
 
 15. Verify that the symbolic link was created successfully using the ls -l command.
     If it worked, check the contents of both the link and the original directory.
 
 16. Remove the symbolic link using the rm command.
-    What happened to my_new_dir? Is it still intact?
+    What happened to new_dir? Is it still intact?
 
 ==>	Hard Link
 
