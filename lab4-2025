@@ -3,7 +3,7 @@ Lab 4 – 2025
 VI/VIM Editor
 ========================================================================================================
 1. Using vim and create a file called my_script.sh.
-2. By default, you are in normal mode (also called escape mode). To start typing, press ‘I’ to switch in insert mode.
+2. By default, you are in normal mode (also called escape mode). To start typing, press ‘i’ to switch in insert mode.
 3. Without adding any text, exit the editor. [Hint: Press Esc then type :q and hit Enter]
 4. Reopen the file my_script.sh. [Hint: vim my_script.sh]
 5. Enter insert mode and type the following line:
