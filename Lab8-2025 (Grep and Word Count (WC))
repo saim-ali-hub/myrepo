@@ -7,7 +7,7 @@ Make sure the ouput of your commands should be stored in ~/output_grep.txt file.
 
 1. Copy /etc/passwd file in your home directory.
 
-2. Search all lines from the ~/passwd file that contain the string "postfix".
+2. Search all lines from the ~/passwd file that contain the string "spool".
 
 3. Copy /etc/group file in your home directory and, from “~/group” file find all lines that contain the string "polkitd", and include two lines before each matching line.
 
