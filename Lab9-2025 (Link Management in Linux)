@@ -58,14 +58,11 @@ Link Management in Linux
 21. Create a directory named hard_link_dir in your home directory and move source_file.txt into that directory. 
 
 22. Now check the status of hard_link.txt using cat command.
-    Is the hard link broken or still functioning?
+    Is the hard link broken or still functioning? if hard link source file move or get delete hard link remain intact. 
 
 23. This time move ~/hard_link_dir/source_file.txt back to your home directory. Now change the permissions of source_file.txt so that the user has read and write access, the group has only read and others have no access.
 
 24. Check the permissions of both hard_link.txt and source_file.txt.
     Were permissions updated on both?
 
-25. Delete the source_file.txt file.
-    Now try viewing the contents of hard_link.txt. Is it still intact?
-
-26. Attempt to create a hard link named new_hard_link that points to the directory new_dir. Were you successful? Obviously not, it's normal behaviour.
+25. Attempt to create a hard link named new_hard_link that points to the directory new_dir. Were you successful? Obviously not, it's normal behaviour.
