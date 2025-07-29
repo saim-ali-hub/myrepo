@@ -45,29 +45,29 @@ Link Management in Linux
 
 ==>	Hard Link
 
-1. In your home directory, create a file named source_file.txt with the text “Welcome to Linoop”.
+17. In your home directory, create a file named source_file.txt with the text “Welcome to Linoop”.
 
-2. Create a hard link named hard_link.txt pointing to source_file.txt.
+18. Create a hard link named hard_link.txt pointing to source_file.txt.
 
-3. Verify that the hard link was created successfully using the ls -l command.
+19. Verify that the hard link was created successfully using the ls -l command.
 
-4. Read the contents of hard_link.txt.
+20. Read the contents of hard_link.txt.
    Do they match source_file.txt?
 
-5. Check the inode numbers of both hard_link.txt and source_file.txt.
+21. Check the inode numbers of both hard_link.txt and source_file.txt.
    Are they the same?
 
-6. Create a directory named hard_link_dir in your home directory and move source_file.txt into that directory.
+22. Create a directory named hard_link_dir in your home directory and move source_file.txt into that directory.
 
-7. Check the status of hard_link.txt using the ls -l command.
+23. Check the status of hard_link.txt using the ls -l command.
    Is the hard link broken or still functioning?
 
-8. Change the permissions of hard_link_dir so that the user has read and write access, and the group and others have only read access.
+24. Change the permissions of hard_link_dir so that the user has read and write access, and the group and others have only read access.
 
-9. Check the permissions of both hard_link.txt and source_file.txt.
+25. Check the permissions of both hard_link.txt and source_file.txt.
    Were permissions updated on both?
 
-10. Delete the source_file.txt file.
+26. Delete the source_file.txt file.
     Now try viewing the contents of hard_link.txt. Is it still intact?
 
-11. Attempt to create a hard link named new_hard_link that points to the directory my_new_dir. Were you successful? Why or why not?
+27. Attempt to create a hard link named new_hard_link that points to the directory my_new_dir. Were you successful? Why or why not?
