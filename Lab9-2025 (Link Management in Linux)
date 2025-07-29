@@ -49,25 +49,23 @@ Link Management in Linux
 
 18. Create a hard link named hard_link.txt pointing to source_file.txt.
 
-19. Verify that the hard link was created successfully using the ls -l command.
+19. Read the contents of hard_link.txt.
+    Do they match source_file.txt?
 
-20. Read the contents of hard_link.txt.
-   Do they match source_file.txt?
+20. Check the inode numbers of both hard_link.txt and source_file.txt.
+    Are they the same?
 
-21. Check the inode numbers of both hard_link.txt and source_file.txt.
-   Are they the same?
+21. Create a directory named hard_link_dir in your home directory and move source_file.txt into that directory. 
 
-22. Create a directory named hard_link_dir in your home directory and move source_file.txt into that directory.
+22. Now check the status of hard_link.txt using cat command.
+    Is the hard link broken or still functioning?
 
-23. Check the status of hard_link.txt using the ls -l command.
-   Is the hard link broken or still functioning?
+23. This time move ~/hard_link_dir/source_file.txt back to your home directory. Now change the permissions of source_file.txt so that the user has read and write access, the group has only read and others have no access.
 
-24. Change the permissions of hard_link_dir so that the user has read and write access, and the group and others have only read access.
+24. Check the permissions of both hard_link.txt and source_file.txt.
+    Were permissions updated on both?
 
-25. Check the permissions of both hard_link.txt and source_file.txt.
-   Were permissions updated on both?
-
-26. Delete the source_file.txt file.
+25. Delete the source_file.txt file.
     Now try viewing the contents of hard_link.txt. Is it still intact?
 
-27. Attempt to create a hard link named new_hard_link that points to the directory my_new_dir. Were you successful? Why or why not?
+26. Attempt to create a hard link named new_hard_link that points to the directory new_dir. Were you successful? Obviously not, it's normal behaviour.
