@@ -9,11 +9,11 @@ Make sure the ouput of your commands should be stored in ~/output_grep.txt file.
 
 2. Search all lines from the ~/passwd file that contain the string "spool".
 
-3. Copy /etc/group file in your home directory and, from “~/group” file find all lines that contain the string "polkitd", and include two lines before each matching line.
+3. Copy /etc/group file in your home directory and, from “~/group” file find all lines that contain the string "polkitd".
 
-4. Grep all lines that contain the string "shutdown", from the ~/passwd file, along with two lines after each match.
+4. Grep all lines that contain the string "shutdown", from the ~/passwd file.
 
-5. Search the ~/group file for lines containing the string "mail", and  two lines before and two lines after each matching line.
+5. Search the ~/group file for lines containing the string "mail".
 
 6. Extract all lines in the /etc/resolv.conf file except those that contain the string "search".
 
@@ -21,21 +21,17 @@ Make sure the ouput of your commands should be stored in ~/output_grep.txt file.
 
 8. Grep all lines containing the word 'root' from /tmp/httpd.conf. Make sure search should not be case sensitive.
 
-9. Find all blank (empty) lines from/tmp/sshd_config and assign line number to each empty line. 
+9. Count the number of lines that contain the word "sshd" inside a file /tmp/sshd_config.
 
-10. Grep all lines containing the string 'root' from /tmp/httpd.conf, including blank lines, and display the line numbers for each. Make sure search should be case sensitive.
-
-11. Count the number of lines that contain the word "sshd" inside a file /tmp/sshd_config.
-
-12. Using the Vim editor, create a file named states.vim, and add the following U.S. state names - each on a separate line:
+10. Using the Vim editor, create a file named states.vim, and add the following U.S. state names - each on a separate line:
     Jersey    Texas   Virginia    Washington.
 
-13. Execute a command to count all together; the number of lines, words, and characters in the states.vim file. (Hint: use the wc command)
+11. Execute a command to count all together; the number of lines, words, and characters in the states.vim file. (Hint: use the wc command)
 
-14. Use the appropriate flag with the wc command to display only the number of lines in the states.vim file.
+12. Use the appropriate flag with the wc command to display only the number of lines in the states.vim file.
 
-15. Use the appropriate flag with the wc command to display only the number of words in the states.vim file.
+13. Use the appropriate flag with the wc command to display only the number of words in the states.vim file.
 
-16. Use the appropriate flag with the wc command to display only the number of characters in the states.vim file.
+14. Use the appropriate flag with the wc command to display only the number of characters in the states.vim file.
 
-17. Use the appropriate flag with the wc command to display only the number of bytes in the states.vim file.
+15. Use the appropriate flag with the wc command to display only the number of bytes in the states.vim file.
