@@ -38,4 +38,4 @@ Ensure your current working directory (PWD) is your home directory and you are o
 
 14. Verify whether new_backup.tar is a compressed or uncompressed file.
 
-15. Using an appropriate command validate if tar_practice/new_backup.tar is compressed file. 
+15. Using an appropriate command validate if tar_practice/etc_backup.tar.gz is compressed file. 
