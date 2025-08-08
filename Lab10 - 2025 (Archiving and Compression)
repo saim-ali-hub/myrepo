@@ -1,0 +1,41 @@
+Lab10 - 2025
+=====================================================================================
+Tar Command Practice – Archiving and Compression
+=====================================================================================
+Prerequisite:
+Ensure your current working directory (PWD) is your home directory and you are operating as a regular (non-root) user.
+
+1. The /etc directory contains many important configuration files and subdirectories. Create an uncompressed archive of /etc in your current working directory, naming it etc_backup.tar. Use the tar command with verbose output enabled. (Do not compress this file.)
+
+2. Verify the size of etc_backup.tar using either:
+   o	ls -lh
+   o	du -sh
+
+3. In your home directory, create a new directory named tar_practice and navigate to this directory.
+
+4. Create another backup of /etc in tar_practice directory, but this time archive and compress it simultaneously, naming it etc_backup.tar.gz.
+
+5. Compare the sizes of ~/etc_backup.tar and etc_backup.tar.gz using:
+   o ls –lh
+   o du –sh
+   Note: Archiving alone does not reduce file size, but compression does.Thanks to the tar command’s compression options.
+
+6. Execute command cd and check you PWD should be your home directory. List the contents of etc_backup.tar without extracting it.
+
+7. Now extract etc_backup.tar into your current working directory.
+
+8. Navigate into tar_practice, and extract etc_backup.tar.gz which is already in this directory.
+
+9. Return to your home directory, create a directory named new_tarball_dir, navigate into it, and create an uncompressed archive named new_backup.tar containing both /etc/passwd and /etc/group. (You can archive multiple files at once.)
+
+10. List the contents of new_backup.tar without extracting.
+
+11. While inside new_tarball_dir, append the files /etc/resolv.conf and /etc/hosts to the existing new_backup.tar archive.
+
+12. Again List all files contained in new_backup.tar. Wow! files are appended in it. 
+
+13. Instead of listing all files, check if /etc/group exists within new_backup.tar.
+
+14. Verify whether new_backup.tar is a compressed or uncompressed file.
+
+15. Using an appropriate command validate if tar_practice/new_backup.tar is compressed file. 
