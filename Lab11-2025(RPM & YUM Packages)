@@ -48,8 +48,6 @@ YUM Package Manager
 
 17) Remove httpd and its dependencies using YUM.
 
-18) Install a package from a local .rpm file using yum localinstall.
+18) List all available package groups.
 
-19) List all available package groups.
-
-20) Install the "Development Tools" group.
+19) Install the "Development Tools" group.
