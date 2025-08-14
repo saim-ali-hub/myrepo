@@ -1,0 +1,55 @@
+Lab11 - 2025
+=====================================================================================
+Lab – RPM & YUM Packages – 2025
+=====================================================================================
+Objective: Learn how to manage software packages in RHEL-based systems using both rpm and yum.
+
+Prerequisites:
+  • Switch to root user. Using su command: 
+    su - 
+    punch root password you set while you created your VM.
+
+RPM Package Manager
+
+1) Check if the wget package is installed using rpm query.
+
+2) List all installed packages whose name contains “httpd”.
+
+3) Display detailed package info for “nano” using rpm.
+
+4) List all files installed by the “nano” package.
+
+5) Check if any package owns the file “/etc/passwd”.
+
+6) Download the “telnet” package’s RPM file (do not install yet) from repos leveraging “wget” command, using following link:   https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackage/telnet-0.17-76.el8.x86_64.rpm
+
+7) Install telnet from the .rpm file using rpm -ivh.
+
+8) Download the “telnet” package’s RPM file (do not install yet) from repos leveraging “wget” command, using following link:   
+   https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackage/telnet-0.17-85.el9.x86_64.rpm  
+
+9) Upgrade an installed package using rpm -Uvh with a newer .rpm file.
+
+10) Remove “telnet” package installed via rpm.
+
+YUM Package Manager
+
+11) List all enabled repositories. 
+    
+12) Search for the package “nano” in available repositories.
+
+13) Display detailed info about the “nano” package from YUM.
+
+14) Install “chrony” using YUM and allow it to resolve dependencies automatically.
+
+15) Let’s check if we can install multiple packages named “httpd” and “zip”, in a single YUM command.
+
+16) Update a specific package (nano) using YUM.
+
+17) Remove httpd and its dependencies using YUM.
+
+18) Install a package from a local .rpm file using yum localinstall.
+
+19) List all available package groups.
+
+20) Install the "Development Tools" group.
