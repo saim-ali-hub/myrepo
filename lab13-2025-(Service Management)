@@ -1,0 +1,89 @@
+Lab13 - 2025
+=====================================================================================
+Service Management
+=====================================================================================
+1. Open your terminal and list all unit files. (Hint: use the systemctl command)
+
+2. Narrow down the output to show only service unit files. (Press q to quit when done)
+
+3. List only the enabled services. (Do not use grep)
+
+4. From the listed enabled services, grep the sshd service.
+
+5. From the same enabled list, grep both chronyd and sshd services together.
+
+6. List all disabled services.
+7. List all running services.
+   Cool!!!! You should now have seen three service states: enabled, disabled, and running.
+
+8. Install the following packages: openssh, chrony, httpd.
+
+9. Start the following services: sshd, chronyd, httpd.
+
+10. Check the status of sshd, chronyd, and httpd. Note the PID of httpd.
+
+11.	Disable the httpd service so it does not start at boot. Check its status and confirm the PID does not change.
+
+12. Enable the httpd service so it starts at boot. Check its status and confirm the PID does not change.
+
+13. Stop the httpd service and check its status. It should be inactive (dead), and no PID will be shown.
+
+14. Start the httpd service again and check its status. The PID should now be present and different from the one in the earlier step.
+
+15. Restart the httpd service and confirm the PID has changed again. (Restart assigns a new PID)
+
+16. Reload the httpd service and confirm the PID remains the same as before.
+
+17. Add custom content to the default web page:
+    echo "I am learning Linux service management" >> /var/www/html/index.html
+
+18. Open a browser and visit http://<ip_address_of_machine> to view the content.
+
+19. List the configuration files of the httpd package using:  rpm -qc httpd
+
+20. Open /etc/httpd/conf/httpd.conf in vim and change the listening port from 80 to 9090 by adding:
+    Listen 9090
+
+21. Restart the httpd service. You should see an error because of permission issues.
+    Job for httpd.service failed because the control process exited with error code. See "systemctl status httpd.service" and "journalctl -xe" for details.
+
+22. Check details with: systemctl status httpd.service
+    The error will show permission denied for port 9090.
+
+23. Set SELinux to permissive mode:
+    setenforce 0
+
+24. Restart the httpd service again — this time it should work.
+
+25. Test access with curl:
+    curl <ip_address_of_machine>:9090
+
+26. Open a browser and test http://<ip_address_of_machine>:9090 — it won’t work yet. It looks like firewall is stopping.
+
+27. Open the firewall port:
+    firewall-cmd --add-port=9090/tcp --permanent
+    firewall-cmd --reload
+
+28. Test again in the browser — now the website should load successfully.
+
+29. Now let’s explore another important service: Chronyd, which is used for time synchronization. Run the command:
+    chronyc sources -v
+    This will display the list of available time sources your system is currently using.
+
+30. Next, let’s configure the system to synchronize with our internal time server by following the steps below.
+    
+    a. Verify chronyd service is active.
+    
+    b. Edit /etc/chrony.conf and add:
+       server 192.168.15.5 iburst
+
+    c. Restart chronyd with:
+       systemctl restart chronyd
+
+    d. Check synchronization status:
+       chronyc sources -v
+
+       It should confirm the system is syncing with the internal server.
+       ^* content-server.linoop.lo>
+
+      COOL!!!!!! Enough learning !!!!!!!!!!!!
