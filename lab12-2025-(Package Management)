@@ -1,0 +1,44 @@
+Lab12 - 2025
+=====================================================================================
+Process Management
+=====================================================================================
+
+1. Open your terminal and review processes in your system. Let’s try different command to display the list of all currently running processes on the system.
+    
+    a. Use the “ps” command to list the current processes running in your session.
+    
+    b. Use the “ps –ef” command to list all processes running on the system.
+    
+    c. Use the “ps aux” command to list all processes running on the system.
+       Note: Both commands are listing all process but differ is detail about    processes.
+    
+    d. Use “pstree” command to list all processes running in your system in hierarchy, don’t overthink about it. Cool!
+
+2. While you are in your home directory. Execute following commands 
+   “vim file1_bg.vim &” 
+   “vim file2_bg.vim &”
+   Are you inside files. No, you should not be. Exactly! you got it “&” (ampersand) sign sent these processes in background.
+
+3. Show only processes belonging to your current user.
+
+4. Grep “vim” process from all the processes running in your system. If exists, then execute kill process by name. (Hint: use pkill command)
+
+5. Display the top 10 processes consuming the most CPU.
+
+6. Display the top 10 processes consuming the most memory.
+
+7. Start the sleep 3000, sleep 20000, and sleep 30000 command in the background and verify that it is running.
+
+8. List all background jobs running in your shell. (Hint use “jobs” command)
+
+9. Kill the sleep 3000 process using its PID.
+
+10. Check the priority (niceness value) of your current shell process.
+
+11. Use kill -l to display all available kill signals.
+
+12. Kill the process sleep 20000 using the SIGTERM signal.
+
+13.	Kill the process sleep 30000 using the SIGKILL signal.
+
+14. Display the total number of processes currently running on your machine.
