@@ -72,9 +72,9 @@ Service Management
 
 30. Next, let’s configure the system to synchronize with our internal time server by following the steps below.
     
-    a. Verify chronyd service is active.
+    a. Verify chronyd service is active. If not start chronyd using systemctl command.
     
-    b. Edit /etc/chrony.conf and add:
+    b. Edit /etc/chrony.conf and add following just next to server entries you see in the file:
        server 192.168.15.5 iburst
 
     c. Restart chronyd with:
