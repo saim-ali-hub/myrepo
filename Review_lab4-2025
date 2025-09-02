@@ -1,0 +1,33 @@
+============================================================================================
+Review_Lab4 – 2025
+============================================================================================
+
+1. Create a new user alice with home directory and bash shell.
+
+2. Manually create a user bob (without useradd) by editing system files. Verify login.
+
+3. Create a new group prod and add both alice and bob into it.
+
+4. Create a directory /labdata in your home directory and copy /etc/resolv.conf, /etc/hosts, /etc/nsswitch.conf files in it. Then create Archive and compress /labdata and name it labdata.tar.gz.
+
+5. While you are in your home directory extract labdata.tar.gz into /tmp directory.
+
+6. Use rpm to list installed packages and count total packages, store this output into a file pkg_info.txt.
+
+7. Query which package provides /bin/ls and store output in pkg_info.txt.
+
+8. List all configured YUM repos and redirect the output in pkg_info.txt.
+
+9. Run “sleep 3000” process in the background. Validate if process running in background, redirect the output of validation in process_file.txt.
+
+10. Start and enable httpd so it persists across reboot. Validate and store info in process_file.txt.
+
+11. Add “https” service and port no. “443” to firewall and validate if both are added, redirect the output to a process_file.txt.
+
+12. Show routing table and store the output in network_file.txt.
+
+13. Verify if local server port 80 is listening using netstat command.
+
+14. Securely copy a file /tmp/sshd_config from linoop.ddns.net to your machine in vcenter under your home directory.
+
+15. Retrieve SSH-related logs from /var/log/secure and store in /tmp directory in ssh_logs file.
