@@ -21,12 +21,13 @@ RPM Package Manager
 
 5) Check if any package owns the file “/etc/passwd”.
 
-6) Download the “telnet” package’s RPM file (do not install yet) from repos leveraging “wget” command, using following link:   https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackage/telnet-0.17-76.el8.x86_64.rpm
+6) Download the “telnet” package’s RPM file (do not install yet) from repos leveraging “wget” command, using following link:   
+   https://yum.oracle.com/repo/OracleLinux/OL6/6/base/x86_64/getPackage/telnet-0.17-48.el6.x86_64.rpm
 
 7) Install telnet from the .rpm file using rpm -ivh.
 
 8) Download the “telnet” package’s RPM file (do not install yet) from repos leveraging “wget” command, using following link:   
-   https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackage/telnet-0.17-85.el9.x86_64.rpm  
+   https://yum.oracle.com/repo/OracleLinux/OL7/7/base/x86_64/getPackage/telnet-0.17-64.el7.x86_64.rpm  
 
 9) Upgrade an installed package using rpm -Uvh with a newer .rpm file.
 
