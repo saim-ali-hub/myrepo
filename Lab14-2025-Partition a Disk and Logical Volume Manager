@@ -1,0 +1,18 @@
+Lab14-2025
+=====================================================================================
+Partition a Disk and Logical Volume Manager (LVM)
+=====================================================================================
+1. Attach a 1 GB disk as /dev/sdb to your VM and partition it into four parts:
+    • The first three partitions should each be 250 MiB.
+    • The fourth partition should occupy the remaining space.
+
+2. Format the first partition /dev/sdb1 with the XFS filesystem and mount it at /app1. Ensure the mount is persistent across reboots.
+
+3. Create a volume group named vg-app2 using /dev/sdb2 and /dev/sdb3 as physical volumes. Within this VG, create a 200 MiB logical volume named lv-app2, format it with the EXT4 filesystem, and mount it at /app2.
+
+4. Extend the logical volume lv-app2 by an additional 200 MiB.
+
+5. Further extend lv-app2 to consume all remaining free space in the vg-app2 volume group.
+
+6. Using the fourth partition /dev/sdb4, create a new volume group vg-db. Inside it, create a 200 MiB logical volume named lv-db, format it with the XFS filesystem, and mount it at /database. Ensure this mount is also boot persistent.
+
