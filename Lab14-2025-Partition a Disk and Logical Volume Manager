@@ -14,7 +14,7 @@ Partition a Disk and Logical Volume Manager (LVM)
 
 5. Further extend lv-app2 to consume all remaining free space in the vg-app2 volume group.
 
-6. Using the fourth partition /dev/sdb4, create a new volume group vg-app2. Inside it, create a 200 MiB logical volume named lv-db, format it with the XFS filesystem, and mount it at /database. Ensure this mount is also boot persistent.
+6. 6.	Add the fourth partition /dev/sdb4 to the existing volume group vg-app2 and extend its size. Within this volume group, create a 200 MiB logical volume named lv-db, format it using the XFS filesystem, and mount it at /database. Ensure the mount is configured to persist across reboots.
 
 7. Extend the logical volume lv-db to consume all remaining free space in the vg-app2 volume group.
 
