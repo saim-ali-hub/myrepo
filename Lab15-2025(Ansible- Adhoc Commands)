@@ -1,0 +1,49 @@
+Lab15 - 2025
+=====================================================================================
+Ansible – Adhoc Commands
+=====================================================================================
+
+Make sure your environment Setup
+•	One control node (Ansible installed).
+•	At least two managed nodes (reachable via SSH).
+•	Ensure passwordless SSH is configured between control and managed nodes.
+
+Tasks
+1. Use the ping module to check connectivity between control node and all managed nodes.
+2. Using command get the number of users currently logged in on each managed node. 
+3. Get the load average of each node by using command module.
+4. Get the disk utilization of each node again use command module.
+5. Use command module and cat /etc/passwd, greps for srvc, and redirects output to /tmp/srvc_info. What happened expected 
+6. Now use the shell module to cat /etc/passwd, grep for srvc, and redirect output to /tmp/srvc_info. Succees is expected at this time!!!!.
+7. Use the user module to create a user marry with UID 3001.
+8. Use the group module to create a group dev with GID 3002.
+9. Add the user marry to the group dev.
+10. Create a directory /tmp/my-dir. (use file module)
+11. Using file module create a file named my-file, inside that /tmp/my-dir directory,.
+12. Inside /tmp/my-dir directory, create a file named new-file with permissions like user should be able to read, write, group can read and others have no access. (Hint: file module)
+13. Using file module create a file /tmp/file1.
+14. This time delete the file /tmp/file1 using file module again.
+15. Copy /etc/hosts file to /tmp/myhosts.
+16.	Using yum module remove “telnet” package from each managed node.
+17.	Using yum module install “telnet” package from each managed node. Make sure state should be “present”. 
+18.	Use the yum module to update “telnet” package. Make sure this time state should be “latest”
+19.	Let’s configure httpd server on each managed node:
+      i. Use the yum module to install the httpd package.
+     ii. Use the service module to start the httpd service.
+    iii. Use the file module to create an index.html file inside the default document root (e.g., /var/www/html/) with some initial content.
+     iv. Use the lineinfile module to add the line:
+	       <h1>amazing we are learning ansible</h1>
+         to the same index.html.
+      v. Let’s manage security settings:
+          a. Use the selinux module to set SELinux to permissive mode.
+          b. Use the firewalld module to add the http service to the firewall and reload it.
+# ====================================================================================================================================================================================
+After completing the lab, you should have:
+-----------------------------------------
+•	Verified connectivity.
+•	Gathered system information.
+•	Managed users, groups, and files.
+•	Installed, updated, and removed packages.
+•	Started and configured a running HTTP service.
+•	Applied SELinux and firewall rules.
+
