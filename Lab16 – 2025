@@ -1,0 +1,44 @@
+Lab16 – 2025
+============================================================================================
+Multitasking Playbook 
+============================================================================================
+Write an Ansible playbook named multitask1.yml that automates user, group, file, package, service, and firewall configurations on all managed nodes.
+
+Tasks:
+1. Create a User
+    o	Use the user module to create a user named sandy.
+    o	Ensure the user is present on all managed nodes.
+2. Create a Group
+    o	Use the group module to create a group named developers.
+    o	Ensure the group exists on all nodes.
+    o	Trigger a handler named “add user to group” when this task runs.
+3. Create a File
+    o	Use the file module to create an empty file named my-new-file in /tmp.
+    o	Set state: touch so it creates the file if it does not exist.
+    o	Trigger a handler named “copy file in home dir” when this task runs.
+4.  Install a Package
+    o	Use the yum module to install the httpd package.
+    o	Ensure the package is installed on all nodes.
+    o	Trigger two handlers after installation:
+        -	start service
+        -	add service in firewall
+5.	Define Handlers
+    o	Create handlers to perform actions after tasks trigger them:
+      1. add user to group
+          -	Use the user module to add sandy to the developers group.
+          -	Use append: yes to avoid removing other group memberships.
+      2. copy file in home dir
+          -	Use the copy module to copy the file /tmp/my-new-file to /home/sandy/my-new-file.
+      3. start service
+          -	Use the systemd module to start and enable the httpd service.
+      4. add service in firewall
+          -	Use the firewalld module to enable the http service in the firewall permanently and immediately.
+
+Expected Outcome:
+=================
+After running the playbook:
+  •	User sandy and group developers should exist.
+  •	User sandy should be a member of developers.
+  •	The file /home/sandy/my-new-file should exist and be copied from /tmp.
+  •	The httpd service should be installed, started, and enabled on boot.
+  •	The HTTP rule should be enabled in the system firewall.
