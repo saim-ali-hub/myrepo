@@ -86,3 +86,45 @@ vg_param: vg_apps
 lv_parm:
    - { name: lv_web, size: 800G, fs_type: ext4,  mount_point: /srv/web }
    - { name: lv_db,  size: 1G, fs_type: xfs,     mount_point: /srv/db }
+
+
+Lab23-2025
+=====================================================================================
+Creating a role for creating aMultiple LVs in a Single VG using dictionary variables
+=====================================================================================
+Objective
+In this lab, you will learn how to manage multiple logical volumes within a single volume group using dictionary variables in Ansible. This setup is ideal for deploying applications that require separate storage areas for different components, such as web and database services.
+Scenario
+A new application deployment requires two dedicated storage areas:
+   •	One for web content
+   •	Another for database storage
+
+You will create these storage areas as logical volumes within a single volume group, using Ansible roles and variables for reusability and automation.
+
+   1.	Create Role Tasks
+   2.	Configure Handlers
+
+Description:
+Learn to manage multiple logical volumes in one volume group for separate application areas using dictionary variables. A new application deployment requires two separate storage areas web and db.
+1.	Create a role named “lvm” in /home/srvc/ansible/roles directory. 
+2.	Make sure two 1G disks i.e. /dev/sdb and /dev/sdc are attached with your machine.
+3.	Create variables to define your physical disks, volume group, and logical volume parameters.
+These should be structured as follows:
+disks:
+   - /dev/sdb
+   - /dev/sdc
+vg_param: vg_apps
+lv_parm:
+   - { name: lv_web, size: 800G, fs_type: ext4,  mount_point: /srv/web }
+   - { name: lv_db,  size: 1G, fs_type: xfs,     mount_point: /srv/db }
+4.	Create tasks in tasks inside the tasks/ directory of your role:
+   a)	Add tasks to:
+      	Create the volume group
+      	Create multiple logical volumes using the dictionary variables
+   b)	Ensure that once logical volumes are successfully created, a notification is triggered to the appropriate handlers.
+5.	Inside the handlers/ directory:
+   a)	Add handlers that respond to the notification events.
+   b)	These handlers should:
+      	Format the newly created logical volumes with their respective file systems
+      	Mount the logical volumes at their designated mount points
+
