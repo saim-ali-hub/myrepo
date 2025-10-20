@@ -1,0 +1,88 @@
+Lab18-2025
+=====================================================================================
+Create a New Logical Volume and Mount It Persistently
+=====================================================================================
+Objective:
+Learn how to create a new Volume Group (VG) and Logical Volume (LV), format it, and mount it persistently.
+Description:
+You are tasked with setting up a new storage volume for application logs on your managed node. 
+1.	Create a playbook in /home/srvc/ansible directory and name it lvm_create.yml 
+2.	Make sure two 1G disks i.e. /dev/sdb and /dev/sdc are attached with your machine.
+3.	Create a Volume Group (VG) named “vg_logs”.
+4.	Create a Logical Volume (LV) named “lv_old_logs”, having size 500M. 
+5.	Create a Logical Volume (LV) named “lv_new_logs”, having size 1G.
+6.	Format “lv_old_logs” logical volume with ext4 filesystem.
+7.	Format “lv_new_logs” logical volume with xfs filesystem.
+8.	Mount the “lv_old_logs” logical volume permanently on “/app/old/logs”
+9.	Mount the “lv_new_logs” logical volume permanently on “/app/new/logs”
+
+
+Lab19-2025
+=====================================================================================
+Remove Logical Volume and wipe out filesystems
+=====================================================================================
+Objective:
+Learn how to umount and remove a Logical Volume (LV), remove Volume Group (VG) and wipe the filesystem after removing Physical Volume (PV).
+Description:
+You are tasked with setting up a new storage volume for application logs on your managed node. 
+1.	Create a playbook in /home/srvc/ansible directory and name it lvm_remove.yml 
+2.	Unmount the “lv_old_logs” logical volume which is permanently mounted on “/app/old/logs”
+3.	Unmount the “lv_new_logs” logical volume which is permanently mounted on “/app/new/logs”
+4.	Remove the Logical Volume (LV) named “lv_old_logs”. 
+5.	Remove the Logical Volume (LV) named “lv_new_logs”.
+6.	Remove the Volume Group (VG) named “vg_logs”.
+7.	Remove physical volume /dev/sdb and /dev/sdc.
+8.	Wipeout the filesystem.
+
+Lab20-2025
+=====================================================================================
+Dynamically (Use variables) create a New Logical Volume and Mount It Persistently.
+=====================================================================================
+Objective:
+Learn how to use variables to create a new Volume Group (VG) and Logical Volume (LV), format it, and mount it persistently.
+Description:
+You are tasked with setting up a new storage volume for application logs on your managed node but this time you are required . 
+1.	Create a playbook in /home/srvc/ansible directory and name it lvm_variable.yml 
+2.	Make sure two 1G disks i.e. /dev/sdb and /dev/sdc are attached with your machine.
+3.	Create variables vg_name. lv_name, lv_size, fs_type, mount_point.
+4.	Create a Volume Group (VG) named “vg_logs”.
+5.	Create a Logical Volume (LV) named “lv_old_logs”, having size 500M. 
+6.	Create a Logical Volume (LV) named “lv_new_logs”, having size 1G.
+7.	Format “lv_old_logs” logical volume with ext4 filesystem.
+8.	Format “lv_new_logs” logical volume with xfs filesystem.
+9.	Mount the “lv_old_logs” logical volume permanently on “/app/old/logs”
+10.	Mount the “lv_new_logs” logical volume permanently on “/app/new/logs”
+
+
+Lab21-2025
+=====================================================================================
+Extend an Existing Logical Volume and resize file system
+=====================================================================================
+Objective:
+Practice extending a logical volume and resizing the filesystem.
+Description:
+Your /app/old/logs partition is running out of space. You must extend the LV and ensure the filesystem grows accordingly.
+Requirements:
+•	Existing Volume groupe name is vg_logs
+•	Existing logical volume name is lv_old_logs
+•	Mount point should remain is /app/old/logs.
+•	Logical volume is formatted with ext4 filesystem.
+•	Now extend the logical volume “lv_old_logs” extend by additional 500M
+
+
+Lab22-2025
+=====================================================================================
+Creating Multiple LVs in a Single VG using dictionary variables
+=====================================================================================
+Description:
+Learn to manage multiple logical volumes in one volume group for separate application areas using dictionary variables. A new application deployment requires two separate storage areas web and db.
+1.	Create a playbook in /home/srvc/ansible directory and name it lvm_dictionary.yml 
+2.	Make sure two 1G disks i.e. /dev/sdb and /dev/sdc are attached with your machine.
+3.	Create variables disks, vg_param, lv_param that should look like.
+disks:
+   - /dev/sdb
+   - /dev/sdc
+vg_param: vg_apps
+lv_parm:
+   - { name: lv_web, size: 800G, fs_type: ext4,  mount_point: /srv/web }
+   - { name: lv_db,  size: 1G, fs_type: xfs,     mount_point: /srv/db }
