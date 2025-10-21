@@ -1,0 +1,65 @@
+Lab24-2025
+=====================================================================================
+Managing Users, Packages, and Services
+=====================================================================================
+Objective:
+=========
+In this lab, you will create and manage Linux users, groups, packages, and services using an Ansible playbook. You will also practice using key Ansible modules, handlers, tags, and variables, and finally convert your playbook into a reusable role.
+
+Modules to be Used:
+==================
+  •	user
+  •	group
+  •	yum
+  •	service
+  •	firewalld
+  •	selinux
+  •	copy
+  •	file
+  •	template
+
+Lab Requirements:
+=================
+1.	Create multiple users:
+    o	Define a list of usernames using variables.
+	     users_list:
+	    	- alice
+		    - bob
+		    - carol
+    o	Use a loop to create all users dynamically.
+
+2.	Create a group named “linoop”. To create group use variable
+    group_name: linoop
+
+3.	Use handlers to manage group membership.
+    o	After creating users, trigger a handler that adds all users to the linoop group.
+    o	Use the user module inside the handler to ensure users are part of the group.
+
+4.	Copy a Welcome file to each user's home directory.
+    o	Create variable welcome_file: Welcome
+    o	Create a file named Welcome on your control node with a custom welcome message “Welcome to the Linoop Group!”.
+    o	Use the copy module to transfer this file to each managed node under /home/{{ username }}/{{welcome_file}}.
+    o	Make sure file ownership matches the respective user.
+
+5.	Install and manage a package using handlers.
+    o	Create variable package_name: httpd
+    o	Install a package of your choice (e.g., httpd or vsftpd) using the yum module.
+    o	Create variable service_name: httpd
+    o	After installation, trigger a handler that starts and enables the service using the service module.
+    o	Ensure the service runs at boot.
+
+6.	Configure Firewalld and SELinux.
+    o	Create variable firewalld_service: http
+    o	Allow the required service (e.g., http or ftp) through the firewall using the firewalld module.
+    o	Check SELinux status using the selinux module and ensure it’s set to enforcing.
+
+7.	Use Tags for Task Categorization.
+    o	Tag all user-related tasks with user.
+    o	Tag all package and service-related tasks with package.
+
+8.	Convert the Playbook into a Role.
+    o	Once your playbook runs successfully, refactor it into an Ansible role named “system_setup”.
+    o	Maintain a clean role structure:
+          i. Place your variable definitions (e.g., user list, package name) inside vars/main.yml.
+         ii. Move handlers to handlers/main.yml and use notify to trigger them.
+        iii. Use a template instead of a static copy file, and personalize the message with {{ ansible_hostname }} or {{ inventory_hostname }} in /home/{{ username }}/{{welcome_file}}.
