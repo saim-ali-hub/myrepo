@@ -84,7 +84,7 @@ disks:
    - /dev/sdc
 vg_param: vg_apps
 lv_parm:
-   - { name: lv_web, size: 800G, fs_type: ext4,  mount_point: /srv/web }
+   - { name: lv_web, size: 800M, fs_type: ext4,  mount_point: /srv/web }
    - { name: lv_db,  size: 1G, fs_type: xfs,     mount_point: /srv/db }
 
 
@@ -115,7 +115,7 @@ disks:
    - /dev/sdc
 vg_param: vg_apps
 lv_parm:
-   - { name: lv_web, size: 800G, fs_type: ext4,  mount_point: /srv/web }
+   - { name: lv_web, size: 800M, fs_type: ext4,  mount_point: /srv/web }
    - { name: lv_db,  size: 1G, fs_type: xfs,     mount_point: /srv/db }
 4.	Create tasks in tasks inside the tasks/ directory of your role:
    a)	Add tasks to:
